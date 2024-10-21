@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Project</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: "Bookman Old Style", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #add8e6; /* Changed to light blue */
+            color: #333;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        /* Background Animation Effect */
+        body:before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(120deg, rgba(246, 211, 101, 0.7), rgba(253, 160, 133, 0.7));
+            z-index: -1;
+            animation: animateBg 10s linear infinite;
+        }
+
+        @keyframes animateBg {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        /* Header styles */
+        header {
+            background: linear-gradient(to right, #ff4b2b, #ff416c); /* Bold gradient */
+            padding: 20px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        header a:hover {
+            color: #ffcccb; /* Hover effect on links */
+        }
+
+        /* Section styling */
+        section {
+            display: none; /* Initially hide all sections */
+            padding: 60px 40px;  /* Larger padding for balanced layout */
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.9); /* Transparent background */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deep shadow */
+            max-width: 1000px; /* Limit section width */
+        }
+
+        /* Typography styles */
+        h1, h2, h3 {
+            margin: 20px 0;
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Animation for sections on scroll */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        section {
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        /* Image styling */
+        .images img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for images */
+        }
+
+    </style>
+    <!-- Include Chart.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<center><img src="https://allegiance-educare.in/storage/uploads/colleges/thumb/250_250_1416826958Capture123.jpg" width="200px" align = "center" alt="Geethanjali Institute of Science and Technology"></center>
+        <h1>GEETHANJALI INSTITUTE OF SCIENCE AND TECHNOLOGY</h1>
+        <h2><center>DEPARTMENT OF DATA SCIENCE</center></h2>
+        <h3><center>A COMMUNITY SERVICE PROJECT WATER POLLUTION</center></h3>
+
+    <!-- Header with links to other pages -->
+    <header>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('abstract')">Abstract</a>
+        <a onclick="showSection('existing system')">Existing System</a>
+        <a onclick="showSection('cause of water pollution')">Cause of Water Pollution</a>
+        <a onclick="showSection('control of water pollution')">Control of Water Pollution</a>
+        <a onclick="showSection('effects of water pollution')">Effects of Water Pollution</a>
+        <a onclick="showSection('survey-pictures')">Survey Pictures</a>
+        <a onclick="showSection('proposed system')">Proposed System</a>
+    </header>
+
+    <!-- Abstract Section -->
+    <section id="abstract">
+        <h2><center><u>ABSTRACT</u></center></h2>
+        <p>
+            Water pollution can be defined in many ways. Usually, it means one or more substances have built up in water to such an extent that they cause problems for animals or people. Oceans, lakes, rivers, and other inland waters can naturally clean up a certain amount of pollution by dispersing it harmless. This, in turn, could affect the health of all the plants, animals, and humans whose lives depend on the river.<br>
+   Through surveys interviews and analysis as water is an important element of human health, polluted water directly affects the human body. Water pollution causes various diseases like typhoid, cholera, hepatitis, cancer, etc. Water pollution damages the plants and aquatic animals present in the river by reducing the oxygen content from the water Industrial Waste. Industries and industrial sites across the world are a major contributor to water pollution. And though regulated, some still do not have proper waste management systems in place.
+
+        </p>
+    </section>
+
+    <!-- Existing System -->
+    <section id="existing system">
+        <h2><u>EXISTING SYSTEM</u></h2>
+        <p>Water resources are natural resources of water that are potentially useful for humans, for example as a source of drinking water supply or irrigation water. 97% of the water on Earth is salt water and only three percent is fresh water; slightly over two-thirds of this is frozen in glaciers and polar ice caps. The remaining unfrozen freshwater is found mainly as groundwater, with only a small fraction present above ground or in the air. Natural sources of fresh water include surface water, under river flow, groundwater and frozen water. Non-natural or human-made sources of fresh water can include wastewater that has been treated for reuse options, and desalinated seawater. People use water resources for agricultural, industrial and household activities. </p>
+    </section>
+
+    <!-- Cause of Water Pollution -->
+    <section id="cause of water pollution">
+        <h2><u>CAUSE OF WATER POLLUTION</u></h2>
+        <p>Water bodies can be polluted by a wide variety of substances, including pathogenic microorganisms, putrescible organic waste, fertilizers and plant nutrients, toxic chemicals, sediments, heat, petroleum (oil), organic waste such as the radioactive substances.<br>
+       Cause of water pollution. Water is an important element of human health, polluted water directly affects the human body. Water pollution causes various diseases like typhoid, cholera, hepatitis, cancer, etc. Water pollution damages the plants and aquatic animals present in the river by reducing the oxygen content from the water Industrial Waste. Industries and industrial sites across the world are a major contributor to water pollution. And though regulated, some still do not have proper waste management systems in place.</p>
+    </section>
+
+    <!-- Control of water pollution -->
+    <section id="control of water pollution">
+        <h2><u>CONTROL OF WATER POLLUTION</u></h2>
+        <p>Avoiding the wastage of water.<br>Implementing laws for industrial units to prevent the disposal of polluted water directly into rivers and lakes.<br>
+Treating industrial effluents chemically before disposing of them in water bodies.<br><br>
+Avoiding overutilization of pesticides and fertilizers.<br>
+Treating sewage before discharging it into water bodies.<br>
+Growing Water Hyacinths that absorb dissolved toxic chemicals like cadmium, mitigating adverse effects.<br>
+Reducing water pollution by wastewater treatments, stormwater management, and water conservation.<br>
+</section>
+
+    <!-- Effects of water pollution -->
+    <section id="effects of water pollution">
+        <h2><u>EFFECTS OF WATER POLLUTION</u></h2>
+        <p>The effect of water pollution can have a huge impact on the food chain. It disrupts the food chain. Cadmium and lead are some toxic substances, these pollutants upon entering the food chain through animals (fish when consumed by animals, humans) can continue to disrupt at higher levels.<br>Humans are affected by pollution and can contract diseases such as hepatitis through faecal matter in water sources. Poor drinking water treatment and unfit water can always cause an outbreak of infectious diseases such as cholera, etc.<br>The ecosystem can be critically affected, modified and destructured because of water pollution.
+</p>
+    </section>
+
+    <!-- Survey Pictures Section -->
+    <section id="survey-pictures">
+    <h2>Survey Pictures</h2>
+    <div class="images">
+        <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY_NAME/main/images/Picture1.jpg" alt="Survey Image 1">
+        <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY_NAME/main/images/Picture2.jpg" alt="Survey Image 2">
+        <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY_NAME/main/images/Picture3.jpg" alt="Survey Image 3">
+        <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY_NAME/main/images/Picture4.jpg" alt="Survey Image 4">
+        <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY_NAME/main/images/Picture5.jpg" alt="Survey Image 5">
+        <img src="https://raw.githubusercontent.com/USERNAME/REPOSITORY_NAME/main/images/Picture6.jpg" alt="Survey Image 6">
+<img src="https://raw.githubusercontent.com/vijaymanurumvk/A11github.io/main/Picture1.jpg" alt="Survey Image 1">
+<img src="https://raw.githubusercontent.com/vijaymanurumvk/A11github.io/main/Picture2.jpg" alt="Survey Image 2">
+<img src="https://raw.githubusercontent.com/vijaymanurumvk/A11github.io/main/Picture3.jpg" alt="Survey Image 3">
+<img src="https://raw.githubusercontent.com/vijaymanurumvk/A11github.io/main/Picture4.jpg" alt="Survey Image 4">
+<img src="https://raw.githubusercontent.com/vijaymanurumvk/A11github.io/main/Picture5.jpg" alt="Survey Image 5">
+<img src="https://raw.githubusercontent.com/vijaymanurumvk/A11github.io/main/Picture6.jpg" alt="Survey Image 6">
+    </div>
+</section>
